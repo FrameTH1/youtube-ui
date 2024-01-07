@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Document</title>
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+    * {
+        border: 0;
+        margin: 0;
+        padding: 0;
+        color: white;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    body {
+        display: flex;
+        overflow-x: hidden;
+    }
+
+    .body {
+        background-color: #030303;
+        max-width: 962px;
+        margin: auto;
+    }
+
+    input::placeholder,
+    .icon-search span {
+        color: white;
+        opacity: 1;
+    }
+
+    .hover {
+        background-color: #73737368;
+        margin: 6px;
+        border-radius: 8px;
+    }
+
+    ul::-webkit-scrollbar {
+        width: 0;
+    }
+
+    .body-content-right::-webkit-scrollbar {
+        width: 0;
+    }
+</style>
+
+<body>
+    <div class="body">
+        <div class="navbar" style="height:64px;width:100vw;display: flex;">
+            <div class="navbar-left" style="width: 240px;display: flex;">
+                <span class="material-symbols-outlined" style="color:white;margin: auto 0 auto 25px;">
+                    menu
+                </span>
+                <img src="https://music.youtube.com/img/on_platform_logo_dark.svg" alt=""
+                    style="height: 24px;margin: auto 0 auto 20px;">
+
+            </div>
+            <div class="navbar-center" style="display: flex;">
+                <div class="search-input" style="height: 40px;display: flex;margin: auto 0;">
+                    <div class="icon-search"
+                        style="width: 50px;height:100%;background-color: #737373;opacity: 0.5;display: flex;margin-left: 56px;border-top-left-radius: 15px;border-bottom-left-radius: 15px;">
+                        <span class="material-symbols-outlined" style="margin: auto;">
+                            search
+                        </span>
+                    </div>
+                    <input type="text"
+                        style="width: 422px;height: 100%;background-color: #737373;opacity: 0.5; border-top-right-radius: 15px;border-bottom-right-radius: 15px;"
+                        placeholder="ค้นหาเพลง อัลบั้ม ศิลปิน พอดแคสต์">
+                </div>
+            </div>
+            <div class="navbar-right" style="display: flex;">
+                <span class="material-symbols-outlined" style="color:white;margin: auto 0 auto 50px;">
+                    cast
+                </span>
+                <img src="https://yt3.ggpht.com/tn7jTSoYPZLdk-fBA1GYTbMOGmiJ9VuHDVggRLxqU3G_YzWb_pL3a0pV6qZTXj6QEgNBnMJojw=s108-c-k-c0x00ffffff-no-rj"
+                    alt="" style="height: 26px;width: 26px;border-radius: 25px;margin: auto 0 auto 25px;">
+            </div>
+        </div>
+        <div class="body-content" style="display: flex;">
+            <div class="body-content-left" style="width: 240px;">
+                <ul>
+                    <li style="display: flex; gap: 15px;padding-left :20px;" class="hover">
+                        <span class="material-symbols-outlined"
+                            style="display:flex;align-items: center;height: 48px;margin: auto 0;">
+                            home
+                        </span>
+                        <p style="margin: auto 0;">หน้าเเรก</p>
+                    </li>
+                    <li style="display: flex; gap: 15px;padding-left :20px;">
+                        <span class="material-symbols-outlined"
+                            style="display:flex;align-items: center;height: 48px;margin: auto 0;">
+                            explore
+                        </span>
+                        <p style="margin: auto 0;">สำรวจ</p>
+                    <li style="display: flex; gap: 15px;padding-left :20px;">
+                        <span class="material-symbols-outlined"
+                            style="display:flex;align-items: center;height: 48px;margin: auto 0;">
+                            library_music
+                        </span>
+                        <p style="margin: auto 0;">คลังเพลง</p>
+                </ul>
+                <div style="width: 240px;display: flex;justify-content: center;margin: 20px 0;">
+                    <div style="border-top: solid 1px white;width: calc(90% - 6px * 2);opacity: 0.2;"></div>
+                </div>
+                <div class="new-playlist" style="width: 240px;display: flex;justify-content: center;">
+                    <p
+                        style="background-color: #73737368; width: calc(90% - 6px * 2);text-align: center;padding: 6px 0;border-radius: 15px;">
+                        + เพลย์ลิสต์ใหม่</p>
+                </div>
+                <div class="listen-later" style="width: 240px;margin-top: 15px;">
+                    <p style="width: calc(90% - 6px * 2);margin-left: 15px;font-size:medium;">ตอนสำหรับฟังภายหลัง</p>
+                    <p style="width: calc(90% - 6px * 2);margin-left: 15px;font-size: small;opacity: 0.6;">
+                        เพลย์ลิสต์อัตโนมัติ</p>
+                </div>
+            </div>
+            <div class="body-content-right"
+                style="width: calc(100vw - 240px);height: calc(100vh - 64px);overflow-y: scroll; overflow-x: hidden;">
+                <div class="tags" style="margin: 48px 0 0 60px;">
+                    <ul style="width:598px;list-style-type: none;display: flex;gap: 15px; overflow-x: scroll;">
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            กระปรี้กระเปร่า</li>
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            ผ่อนคลาย</li>
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            รู้สึกดี</li>
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            ปาร์ตี้</li>
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            เดินทาง</li>
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            ออกกำลังกาย</li>
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            โรแมนติก</li>
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            เศร้า</li>
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            จดจ่อ</li>
+                        <li
+                            style="background-color: #73737368;padding: 7px;border-radius: 10px;font-size: smaller;text-wrap: nowrap;">
+                            การนอนหลับ</li>
+                    </ul>
+                    <div style="display: flex;margin-top: 25px;width:598px">
+                        <img src="https://yt3.ggpht.com/tn7jTSoYPZLdk-fBA1GYTbMOGmiJ9VuHDVggRLxqU3G_YzWb_pL3a0pV6qZTXj6QEgNBnMJojw=s88-c-k-c0x00ffffff-no-rj"
+                            alt="" style="width: 48px;height: 48px;border-radius: 25px;margin: auto 0;">
+                        <div class="profile-show-details" style="margin-left: 15px;width: 100%;">
+                            <p style="font-size: smaller;opacity: 0.6;margin-bottom: 7px;">SUKIT PROMPUTTA</p>
+                            <div style="display: flex; justify-content: space-between;width: 100%;">
+                                <p style="font-size:x-large;font-weight: bold;">ฟังอีกครั้ง</p>
+                                <div style="display: flex;gap: 15px;">
+                                    <p
+                                        style="border: solid 1px white;margin: auto;padding: 3px 11px;border-radius: 25px;opacity: 0.4;">
+                                        &lt;</p>
+                                    <p
+                                        style="border: solid 1px white;margin: auto;padding: 3px 11px;border-radius: 25px;">
+                                        &gt;</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex;margin-top: 25px;width:598px">
+                        <ul style="list-style-type: none;display: flex; gap: 15px;overflow-x: scroll;">
+                            <li style="width: 180px;">
+                                <img src="https://music.youtube.com/image/mixart?r=ENgEGNgEMjoIDRoLUWVzVHRnbThqeWcaC0Y1dXpsQ1VyRmlJGgtxZnc5ejVyTG1tNBoLQ2lfemFkMzlVaHciAmVu"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>Shunkan Heartbeat</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    เพลง • Hiodoshi Ao Otonose Kanade Ichijou Ririka</p>
+                            </li>
+                            <li style="width: 180px;">
+                                <img src="https://music.youtube.com/image/mixart?r=ENgEGNgEMkIIARoNL2cvMTF0YzFnN21wMBoNL2cvMTFqOHFkcWhiMhoNL2cvMTFod2wyc3k0OBoNL2cvMTFmcWJnMXdtbiICZW4"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>幽霊東京 / 初音ミク</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    YOASOBI • การดู 9.4 ล้าน ครั้ง</p>
+                            </li>
+                            <li style="width: 180px;">
+                                <img src="https://music.youtube.com/image/mixart?r=ENgEGNgEMiYICBABGg0vZy8xMXZkZ3g4YnhzGg0vZy8xMWo4cWRxaGIyIgJlbg"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>Reiwa Era J-Pop</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    King Gnu OFFICIAL HIGE DANDISM Yuuri และAdo</p>
+                            </li>
+                            <li style="width: 180px;">
+                                <img src="https://lh3.googleusercontent.com/PlPvpyT6k0pto5ebe5Dr42_F2szuF7Icp_gQaabdi8IMnlRb2iPk8a2JF2kRKEYpt7LNH8IjQfYjTw=w226-h226-l90-rj"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>Presenting YOASOBI</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    YOASOBI</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: flex;margin-top: 30px;width:598px">
+                        <div style="display: flex; justify-content: space-between;width: 100%;">
+                            <p style="font-size:x-large;font-weight: bold;">มิกซ์สำหรับคุณ</p>
+                            <div style="display: flex;gap: 15px;">
+                                <p style="border: solid 1px white;margin: auto;padding: 3px 11px;border-radius: 25px;">
+                                    เพิ่มเติม</p>
+                                <p
+                                    style="border: solid 1px white;margin: auto;padding: 3px 11px;border-radius: 25px;opacity: 0.4;">
+                                    &lt;</p>
+                                <p style="border: solid 1px white;margin: auto;padding: 3px 11px;border-radius: 25px;">
+                                    &gt;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex;margin-top: 25px;width:598px">
+                        <ul style="list-style-type: none;display: flex; gap: 15px;overflow-x: scroll;">
+                            <li style="width: 180px;">
+                                <img src="https://lh3.googleusercontent.com/6PrlhnplHrl69oMEZG8uSpSbdseCCkXmF2luIjImmK3lPnshXpWom5DzdDB89kra_OH27ICYoy4Q_CSz=w226-h226-l90-rj"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>HEART BEAT</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    ซิงเกิล • YOASOBI</p>
+                            </li>
+                            <li style="width: 180px;">
+                                <img src="https://lh3.googleusercontent.com/wUtfZN7Grsp0EQzt-Ok8dvHHHXUvevswDhtCDTDLbQTUNoJcni9M09nXANy_AH_7nVretHa_dEqol8k=w226-h226-l90-rj"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>S.T.Y.</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    ซิงเกิล • Tokoyami Towa</p>
+                            </li>
+                            <li style="width: 180px;">
+                                <img src="https://lh3.googleusercontent.com/65CWpuZf0C7W7exwFPSi0syY0acFXHE_3Kl9uMh9802B94F-xEZtV2uwj96BjLlyw7W4FOmrRhYlnpNr3w=w226-h226-l90-rj"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>ORBITURE</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    EP • Moona Hoshinova</p>
+                            </li>
+                            <li style="width: 180px;">
+                                <img src="https://lh3.googleusercontent.com/rYTACuvVFiLp9ehlTAQezCUwcv9NnewXg7ejj9C1j2hijmlHuiexrGHV7S9g3B4Tvqd_kSAnLrCUYK8=w226-h226-s-l90-rj"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>Knock it out!</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    ซิงเกิล • Amane Kanata</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: flex;margin-top: 30px;width:598px">
+                        <div style="display: flex; justify-content: space-between;width: 100%;">
+                            <p style="font-size:x-large;font-weight: bold;">มิกซ์สำหรับคุณ</p>
+                            <div style="display: flex;gap: 15px;">
+                                <p style="border: solid 1px white;margin: auto;padding: 3px 11px;border-radius: 25px;">
+                                    เพิ่มเติม</p>
+                                <p
+                                    style="border: solid 1px white;margin: auto;padding: 3px 11px;border-radius: 25px;opacity: 0.4;">
+                                    &lt;</p>
+                                <p style="border: solid 1px white;margin: auto;padding: 3px 11px;border-radius: 25px;">
+                                    &gt;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex;margin-top: 25px;width:598px">
+                        <ul style="list-style-type: none;display: flex; gap: 15px;overflow-x: scroll;">
+                            <li style="width: 180px;">
+                                <img src="https://music.youtube.com/image/mixart?r=ENgEGNgEMjoIDRoLUWVzVHRnbThqeWcaC0Y1dXpsQ1VyRmlJGgtxZnc5ejVyTG1tNBoLQ2lfemFkMzlVaHciAmVu"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>Shunkan Heartbeat</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    เพลง • Hiodoshi Ao Otonose Kanade Ichijou Ririka</p>
+                            </li>
+                            <li style="width: 180px;">
+                                <img src="https://music.youtube.com/image/mixart?r=ENgEGNgEMkIIARoNL2cvMTF0YzFnN21wMBoNL2cvMTFqOHFkcWhiMhoNL2cvMTFod2wyc3k0OBoNL2cvMTFmcWJnMXdtbiICZW4"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>幽霊東京 / 初音ミク</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    YOASOBI • การดู 9.4 ล้าน ครั้ง</p>
+                            </li>
+                            <li style="width: 180px;">
+                                <img src="https://music.youtube.com/image/mixart?r=ENgEGNgEMiYICBABGg0vZy8xMXZkZ3g4YnhzGg0vZy8xMWo4cWRxaGIyIgJlbg"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>Reiwa Era J-Pop</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    King Gnu OFFICIAL HIGE DANDISM Yuuri และAdo</p>
+                            </li>
+                            <li style="width: 180px;">
+                                <img src="https://lh3.googleusercontent.com/PlPvpyT6k0pto5ebe5Dr42_F2szuF7Icp_gQaabdi8IMnlRb2iPk8a2JF2kRKEYpt7LNH8IjQfYjTw=w226-h226-l90-rj"
+                                    alt="" style="height: 180px;  width: 180px;">
+                                <p>Presenting YOASOBI</p>
+                                <p
+                                    style="text-overflow: ellipsis;word-wrap: break-word;overflow: hidden;max-height:3em;line-height: 1.5em;opacity: 0.4;">
+                                    YOASOBI</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
